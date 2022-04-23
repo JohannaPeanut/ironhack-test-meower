@@ -1,0 +1,14 @@
+<h1>Meow</h1>
+{{#each publications}}
+
+       <a href="/meow/{{ _id }}" class="publication-item">
+       {{#if  picture}}
+              <img src="{{ picture }}" alt="">
+       {{/if}}
+        <p>{{ message }}</p>
+        <small> {{ createdAt }}</small>
+        <br>
+        <small> {{ creator.name }}</small>
+      </a>
+
+{{/each}}
